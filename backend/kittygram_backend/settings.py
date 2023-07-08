@@ -15,6 +15,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'secret01')
 DEBUG = bool(strtobool(os.getenv('DEBUG', 'False')))
 
 ALLOWED_HOSTS = [
+    'k-gram.didns.ru',
     '127.0.0.1',
     'localhost',
 ]
