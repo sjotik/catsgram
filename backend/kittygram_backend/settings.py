@@ -1,4 +1,3 @@
-# flake8: noqa
 import os
 from distutils.util import strtobool
 from pathlib import Path
