@@ -11,6 +11,7 @@ services:
     env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data
+
   backend:
     build: ./backend/
     env_file: .env
@@ -19,13 +20,19 @@ services:
     volumes:
       - static:/backend_static
       - media:/media
+
   frontend:
+    depends_on:
+      - backend
     env_file: .env
     build: ./frontend/
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
+
   gateway:
+  depends_on:
+      - frontend
     build: ./nginx/
     env_file: .env
     ports:

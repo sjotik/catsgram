@@ -1,26 +1,71 @@
-#  Как работать с репозиторием финального задания
+<br/>
+<p align="center">
+  <a href="https://github.com/sjotik/kittygram_final">
+    <img src="frontend/src/images/logo.svg" alt="Logo" width="80" height="80">
+  </a>
 
-## Что нужно сделать
+  <h3 align="center">KITTYGRAM</h3>
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+  <p align="center">
+    Instagram for cats
+    <br/>
+    <br/>
+  </p>
+</p>
 
-## Как проверить работу с помощью автотестов
+![workflow](https://github.com/sjotik/kittygram_final/actions/workflows/main.yml/badge.svg)
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
+## Table Of Contents
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+* [About the Project](#about-the-project)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Technologies](#used-technologies)
+* [License](#license)
+* [Authors](#authors)
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+## About The Project
 
-## Чек-лист для проверки перед отправкой задания
+Social network for cats like instagram.
+You can share images and achievements your pet cats.
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+## Getting Started
+
+If you don't have Docker on your server, use manual from [Official page](https://docs.docker.com/engine/install/)
+
+### Installation
+
+1. [Clone](git@github.com:sjotik/kittygram_final.git) this project repo.
+
+2. For starting this project locally use next command from project directory:
+
+`docker compose up -d`
+
+Open http://127.0.0.1:9000 in browser. **ENJOY**
+
+### ENV variable
+
+Project use PostgresQL database and for deploy you need create **.env** file in root directory with variables:
++ POSTGRES_DB=***set_name_for_DB***
++ POSTGRES_USER=***set_db_user***
++ POSTGRES_PASSWORD=***set_password***
++ DB_HOST=**db**
++ DB_PORT=**5432**
+
+Also there is taken out django variables **SECREC_KEY** and **DEBUG**. You need to set them.
+
+## Used Technologies
+
+* Python
+* REST_Framework
+* React
+* PostgresQL
+* Docker Compose
+
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/sjotik/kittygram_final/blob/main/LICENSE.md) for more information.
+
+## Authors
+
+* [**Sjotik**](https://github.com/sjotik/)
