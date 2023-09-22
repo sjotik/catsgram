@@ -1,3 +1,4 @@
+
 <br/>
 <p align="center">
   <a href="https://github.com/sjotik/kittygram_final">
@@ -56,11 +57,26 @@ Also there is taken out django variables **SECREC_KEY** and **DEBUG**. You need 
 
 ## Used Technologies
 
-* Python
-* REST_Framework
-* React
-* PostgresQL
-* Docker Compose
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-wp8o"><a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a></th>
+    <th class="tg-wp8o"><a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a></th>
+    <th class="tg-wp8o"><a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a></th>
+    <th class="tg-wp8o"><a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a></th>
+    <th class="tg-wp8o"><a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-wp8o">Python</td>
+    <td class="tg-wp8o">Django<br>RestFramework</td>
+    <td class="tg-wp8o">React</td>
+    <td class="tg-wp8o">Postgres</td>
+    <td class="tg-wp8o">Docker</td>
+  </tr>
+</tbody>
+</table>
 
 ## License
 
